@@ -2,46 +2,17 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 金属粉末简介
 
-Let's discover **Docusaurus in less than 5 minutes**.
+金属增材制造（AM）技术近年来得到了迅猛发展，作为增材制造的核心材料，金属粉末的质量直接影响到最终制件的性能。高质量的金属粉末应具备以下几个关键特性：
+- **粒度分布**：均匀的粒度分布有助于改善粉末的流动性和铺展性，从而提高成形质量。
+- **形貌**：球形粉末通常具有更好的流动性和密实性，有助于减少成形缺陷。
+- **化学成分**：严格控制的化学成分确保材料在高温下的稳定性和机械性能。
+- **纯度**：高纯度的粉末可以减少杂质对材料性能的负面影响。
+- **流动性**：良好的流动性有助于粉末在成形过程中均匀铺展，减少空隙和缺陷。
+- **松装密度**：较高的松装密度有助于提高成形件的致密度和机械性能。
 
-## Getting Started
+本目录下的金属粉末产品均经过严格的质量控制和测试，确保其符合增材制造的高标准要求。我们致力于为客户提供优质的金属粉末材料，助力其在增材制造领域取得成功。
 
-Get started by **creating a new site**.
+## 目录
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
