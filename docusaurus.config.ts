@@ -41,6 +41,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: 'metal_powder',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -83,7 +84,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '金属粉末',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
