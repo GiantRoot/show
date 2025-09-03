@@ -137,7 +137,10 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pevoro. 超厉害哦.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pevoro </br>
+      <img src="/img/备案图标.png" alt="" style="vertical-align:-3px;width:16px;height:16px;margin-right:4px;"> 
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?code=32031202001142" rel="noreferrer" target="_blank">苏公网安备32031202001142号</a>  
+      <a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">苏ICP备2025204842号-1</a>`,
     },
     prism: {
       theme: prismThemes.github,
