@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Pevoro',
-  tagline: '增材智造',
+  tagline: '实验科学与虚拟模型的交响',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -40,34 +40,49 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          path: 'metal_powder',
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          routeBasePath: '/metal_powder/',},
-        blog: {
-          showReadingTime: true,
+        docs: false,
+        blog: {                          // ← 开启 preset 自带 blog
+            showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        theme: { customCss: require.resolve('./src/css/custom.css'), },
+        sitemap: { changefreq: 'weekly', priority: 0.5 },
       } satisfies Preset.Options,
     ],
+  ],
+
+  // ⭐ 在这里手动开内容插件实例（可多开）
+  plugins: [
+    // Docs 实例 #1：金属粉末文档
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'metal_powder',                   // 唯一 ID
+        path: 'metal_powder',                 // 你的文档源目录
+        routeBasePath: 'metal_powder',        // 访问前缀：/metal_powder/*
+        sidebarPath: require.resolve('./sidebars.ts'),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+
+    // Docs 实例 #2：Blender 教程
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'blender_tutorial',
+        path: 'blender_tutorial',
+        routeBasePath: 'blender_tutorial',
+        sidebarPath: require.resolve('./sidebars.ts'),
+      },
+    ],
+
   ],
 
   themeConfig: {
@@ -82,11 +97,19 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          docsPluginId: 'metal_powder',
+          sidebarId: 'metalSidebar',
           position: 'left',
           label: '金属粉末',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docSidebar',
+          docsPluginId: 'blender_tutorial',
+          sidebarId: 'blenderSidebar',
+          position: 'left',
+          label: 'Blender教程',
+        },
+        { to: '/blog', label: '技术博客', position: 'left', activeBaseRegex: '^/blog' },
         {
           href: 'https://www.baidu.com',
           label: 'Baidu',
@@ -97,16 +120,20 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: '粉末材料',
+/*        {
+          title: '快速导航',
           items: [
             {
               label: '金属粉末',
               to: '/metal_powder/intro',
             },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
           ],
         },
-        {
+     {
           title: 'Community',
           items: [
             {
@@ -126,20 +153,18 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            
             {
               label: 'GitHub',
               href: 'https://github.com/',
             },
           ],
-        },
+        }, */
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Pevoro </br>
       <img src="/img/备案图标.png" alt="" style="vertical-align:-3px;width:16px;height:16px;margin-right:4px;"> 
-      <a href="https://beian.mps.gov.cn/#/query/webSearch?code=32031202001142" rel="noreferrer" target="_blank">苏公网安备32031202001142号</a>  
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?code=32031202001142" rel="noreferrer" target="_blank">苏公网安备32031202001142号</a>
+      <img src="/img/备案图标.png" alt="" style="vertical-align:-3px;width:16px;height:16px;margin-right:4px;"> 
       <a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">苏ICP备2025204842号-1</a>`,
     },
     prism: {

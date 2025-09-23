@@ -21,7 +21,19 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/metal_powder/intro">
-            快速了解3D打印增材技术及原材料 ⏱️
+            实验原料及技术介绍 🧪
+          </Link>
+          <>  &nbsp; &nbsp; &nbsp;</>
+          <Link
+            className="button button--secondary button--lg"
+            to="/metal_powder/intro">
+            快速生成一个渲染模型 ⏱️
+          </Link>
+          <>  &nbsp; &nbsp; &nbsp;</>
+          <Link
+            className="button button--secondary button--lg"
+            to="/metal_powder/intro">
+            捐赠本站  ❤️
           </Link>
         </div>
       </div>
@@ -33,8 +45,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="实验科学与虚拟模型的交响">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
