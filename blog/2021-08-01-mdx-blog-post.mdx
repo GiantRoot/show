@@ -17,8 +17,19 @@ Use the power of React to create interactive blog posts.
 
 For example, use JSX to create an interactive button:
 
-```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
-```
 
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => {
+    const STLViewer = require('@site/src/components/STLViewer').default;
+    return (
+      <>
+        <STLViewer src="/models/part.stl" height={420} />
+        <p style={{marginTop:8}}>
+          <a href="/models/part.stl" download>下载 STL</a>
+        </p>
+      </>
+    );
+  }}
+</BrowserOnly>
