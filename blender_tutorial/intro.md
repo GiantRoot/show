@@ -5,3 +5,12 @@ sidebar_position: 1
 # Blender建模
 
 Blender是一款免费开源的3D建模软件，功能强大且社区活跃，是一款适合创建三维渲染示意图的软件。
+
+为了帮助大家更好地使用Blender，我整理了一些教程，放在这里，供大家参考。
+
+## 软件下载
+
+国内用户访问官方网站可能会比较慢，
+可以使用[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/blender/release/)下载，
+blender-4.5-x64-windows版本[下载链接](https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender4.5/blender-4.5.3-windows-x64.msix)。
+你也可以从Blender的[官方网站](https://www.blender.org/download/)下载最新版本的Blender，支持Windows、macOS和Linux系统。

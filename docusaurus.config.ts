@@ -67,8 +67,6 @@ const config: Config = {
         path: 'metal_powder',                 // 你的文档源目录
         routeBasePath: 'metal_powder',        // 访问前缀：/metal_powder/*
         sidebarPath: require.resolve('./sidebars.ts'),
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
       },
     ],
 
@@ -100,19 +98,19 @@ const config: Config = {
           docsPluginId: 'metal_powder',
           sidebarId: 'metalSidebar',
           position: 'left',
-          label: '金属粉末',
+          label: '🟢金属粉末',
         },
         {
           type: 'docSidebar',
           docsPluginId: 'blender_tutorial',
           sidebarId: 'blenderSidebar',
           position: 'left',
-          label: 'Blender教程',
+          label: '🟢Blender教程',
         },
-        { to: '/blog', label: '技术博客', position: 'left', activeBaseRegex: '^/blog' },
+        { to: '/blog', label: '🟢Blog', position: 'left', activeBaseRegex: '^/blog' },
         {
-          href: 'https://www.baidu.com',
-          label: 'Baidu',
+          href: '/contacts',
+          label: '联系我',
           position: 'right',
         },
       ],

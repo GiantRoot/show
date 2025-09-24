@@ -1,30 +1,28 @@
 ---
-slug: welcome
-title: Welcome
+slug: Welcome
+title: 欢迎来到Pevoro的博客
 authors: [pevoro]
-date: 2025-09-23
-tags: [hello, review]
+date: 2025-09-24
+tags: [hello, review, share]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
-
-Here are a few tips you might find useful.
+这是一个技术博客，主要分享粉末冶金技术、3D打印技术、金属粉末原料、Blender设计渲染、有限元计算模拟等相关内容。
 
 <!-- truncate -->
 
-Simply add Markdown files (or folders) to the `blog` directory.
+## 粉末冶金及3D打印技术
 
-Regular blog authors can be added to `authors.yml`.
+我有多年粉末冶金及3D打印技术的工作经验，熟悉各种金属粉末材料及其应用工艺。
 
-The blog post date can be extracted from filenames, such as:
+我会分享一些关于粉末冶金及3D打印技术的基础知识、工艺流程、设备介绍、材料选择等内容，帮助大家更好地了解和应用这些技术。
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
+## Blender设计渲染
 
-A blog post folder can be convenient to co-locate blog post images:
+我也会分享一些关于Blender设计渲染的教程和技巧，帮助大家使用Blender进行3D建模、材质贴图、灯光渲染等操作，制作出高质量的三维效果图。
 
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+我本人也正在学习Blender，我希望通过经验分享的方式，促进自己的学习和进步。
+如果你也是Blender的爱好者，欢迎交流和分享经验。
 
-The blog supports tags as well!
+## 有限元计算模拟
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+我还会分享一些关于有限元计算模拟的内容，介绍一些常用的有限元软件及其应用方法，帮助大家进行结构分析、热分析、流体分析等工作。我拥有多年的固体力学结构分析经验，熟悉Abaqus等有限元软件的使用。

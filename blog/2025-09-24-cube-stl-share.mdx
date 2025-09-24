@@ -1,0 +1,37 @@
+---
+slug: cube-stl-share
+title: 立方体模型分享
+authors: [pevoro]
+tags: [share]
+---
+
+这是一个简单的立方体STL模型，使用Blender设计并导出。
+这只是一个最简单的模型，用来测试和演示如何在网页中嵌入3D模型查看器。
+后续我会分享一些我自己设计的更复杂的模型。
+
+:::tip
+
+你可以缩放和旋转模型，如果是你想要的，可以点击下面的链接下载STL文件。
+
+:::
+
+{/* truncate */}
+
+For example, use JSX to create an interactive button:
+
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => {
+    const STLViewer = require('@site/src/components/STLViewer').default;
+    return (
+      <>
+        <STLViewer src="/models/part.stl" height={420} />
+        <p style={{marginTop:8}}>
+          <a href="/models/part.stl" download>下载 STL</a>
+        </p>
+      </>
+    );
+  }}
+</BrowserOnly>
