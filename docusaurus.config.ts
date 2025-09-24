@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -42,7 +44,7 @@ const config: Config = {
       {
         docs: false,
         blog: {                          // ← 开启 preset 自带 blog
-            showReadingTime: true,
+          showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -50,6 +52,8 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         theme: { customCss: require.resolve('./src/css/custom.css'), },
         sitemap: { changefreq: 'weekly', priority: 0.5 },
@@ -67,6 +71,8 @@ const config: Config = {
         path: 'metal_powder',                 // 你的文档源目录
         routeBasePath: 'metal_powder',        // 访问前缀：/metal_powder/*
         sidebarPath: require.resolve('./sidebars.ts'),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
     ],
 
@@ -78,10 +84,20 @@ const config: Config = {
         path: 'blender_tutorial',
         routeBasePath: 'blender_tutorial',
         sidebarPath: require.resolve('./sidebars.ts'),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
     ],
 
   ],
+
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+    type: 'text/css',
+    // integrity 可以先省略；若使用，必须是“真实哈希”
+    integrity: 'nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+',
+    crossorigin: 'anonymous',
+  }],
 
   themeConfig: {
     // Replace with your project's social card
