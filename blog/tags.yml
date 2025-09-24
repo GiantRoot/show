@@ -7,3 +7,8 @@ review:
   label: Review
   permalink: /review
   description: Review technical articles and software.
+
+share:
+  label: Share
+  permalink: /share
+  description: Share some useful things and models.
