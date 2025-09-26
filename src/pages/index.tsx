@@ -18,23 +18,13 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+
           <Link
             className="button button--secondary button--lg"
-            to="/metal_powder/intro">
-            实验原料及技术介绍 🧪
+            to="/blog">
+            📚️ 打开技术博客列表 💻️
           </Link>
-          <>  &nbsp; &nbsp; &nbsp;</>
-          <Link
-            className="button button--secondary button--lg"
-            to="/metal_powder/intro">
-            快速生成一个渲染模型 ⏱️
-          </Link>
-          <>  &nbsp; &nbsp; &nbsp;</>
-          <Link
-            className="button button--secondary button--lg"
-            to="/metal_powder/intro">
-            捐赠本站  ❤️
-          </Link>
+
         </div>
       </div>
     </header>
