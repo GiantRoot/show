@@ -12,3 +12,8 @@ share:
   label: Share
   permalink: /share
   description: Share some useful things and models.
+
+抱怨:
+  label: 抱怨
+  permalink: /complain
+  description: 发泄不满，抱怨生活。
