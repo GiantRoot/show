@@ -67,9 +67,9 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'metal_powder',                   // 唯一 ID
-        path: 'metal_powder',                 // 你的文档源目录
-        routeBasePath: 'metal_powder',        // 访问前缀：/metal_powder/*
+        id: 'experiments',
+        path: 'experiments',
+        routeBasePath: 'experiments',
         sidebarPath: require.resolve('./sidebars.ts'),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -80,9 +80,9 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'blender_tutorial',
-        path: 'blender_tutorial',
-        routeBasePath: 'blender_tutorial',
+        id: 'models',
+        path: 'models',
+        routeBasePath: 'models',
         sidebarPath: require.resolve('./sidebars.ts'),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -111,19 +111,23 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          docsPluginId: 'metal_powder',
-          sidebarId: 'metalSidebar',
+          docsPluginId: 'experiments',
+          sidebarId: 'experimentSidebar',
           position: 'left',
-          label: '🟢金属粉末',
+          label: '🔬实验科学',
         },
         {
           type: 'docSidebar',
-          docsPluginId: 'blender_tutorial',
-          sidebarId: 'blenderSidebar',
+          docsPluginId: 'models',
+          sidebarId: 'modelSidebar',
           position: 'left',
-          label: '🟢Blender教程',
+          label: '🖥️虚拟模型',
         },
-        { to: '/blog', label: '🟢Blog', position: 'left', activeBaseRegex: '^/blog' },
+        {
+            to: '/blog', 
+            label: '📝我的博客', 
+            position: 'left', 
+            activeBaseRegex: '^/blog' },
         {
           href: '/contacts',
           label: '联系我',

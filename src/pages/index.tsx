@@ -22,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/blog">
-            📚️ 打开技术博客列表 💻️
+            📚️ 先来看看Blog列表吧 💻️
           </Link>
 
         </div>
