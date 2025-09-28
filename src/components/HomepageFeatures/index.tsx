@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '爬虫友好',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/机器人.svg').default,
     description: (
       <>
         不受制于封闭的平台，倡导信息流通，促进AI发展。
