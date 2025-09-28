@@ -1,0 +1,8 @@
+{
+  "label": "Blender建模",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "使用Blender进行3D建模和渲染"
+  }
+}
