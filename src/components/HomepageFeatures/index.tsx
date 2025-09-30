@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '视频可下载',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/video_download.svg').default,
     description: (
       <>
         视频允许下载，方便学习过程中频繁的快进和回退。
