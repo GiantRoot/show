@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '接受捐赠',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/donate.svg').default,
     description: (
       <>
         本小站自有服务器，提供部分下载服务，成本较高。
