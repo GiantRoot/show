@@ -98,55 +98,11 @@ sudo systemctl reload caddy
   # 或至少保证所有文件对“其他用户”可读（o+r）
   ```
 
-## 之后如何“自动更新”站点？
+## 之后如何更新站点
 
-```sh
-sudo tee /usr/local/bin/deploy_site.sh >/dev/null <<'SH'
-#!/usr/bin/env bash
-set -euo pipefail
-
-REPO_DIR="/home/deploy/show"
-DEST_DIR="/var/www/site"
-BRANCH="main"
-
-cd "$REPO_DIR"
-
-# 拉代码（公开仓库用 https；如果你用 ssh，确保 deploy 用户能免密拉取）
-git fetch --depth=1 origin "$BRANCH"
-git reset --hard "origin/$BRANCH"
-
-# 安装依赖并构建
-if git diff --name-only HEAD@{1} HEAD | grep -qE 'package(-lock)?\.json'; then
-  echo "[deploy] dependencies changed, running npm ci"
-  npm ci --no-audit --no-fund
-else
-  echo "[deploy] no dependency change, skipping npm ci"
-fi
-npm run build
-
-# 同步到站点目录（删除多余文件）
-rsync -a --delete "$REPO_DIR/build/" "$DEST_DIR/"
-
-# 可选：确保 caddy 可读（只在第一次可能需要）
-# chgrp -R caddy "$DEST_DIR" || true
-# chmod -R 2755 "$DEST_DIR" || true
-
-echo "[deploy] done at $(date '+%F %T')"
-SH
-
-sudo chown deploy:deploy /usr/local/bin/deploy_site.sh
-sudo chmod +x /usr/local/bin/deploy_site.sh
-```
-
-3）用 cron 定时跑（每 10 分钟一次）
+在本地项目目录运行：
 
 ```bash
-sudo -u deploy crontab -e
-
-*/10 * * * * /usr/bin/flock -n /var/lock/pevoro-deploy.lock /usr/local/bin/deploy_site.sh >> /var/log/pevoro-deploy.log 2>&1
-
-# 手动更新
-
-```
-/usr/local/bin/deploy_site.sh
+npm run build
+rsync -av --delete ./build/ deploy@your.server.ip:/var/www/site/
 ```
