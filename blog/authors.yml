@@ -4,20 +4,4 @@ pevoro:
   url: https://pevoro.cn
   image_url: http://pevoro.cn/img/logo.svg
   page: true
-  socials:
-    x: pevoro
-    linkedin: pevoro
-    github: pevoro
-    newsletter: https://pevoro.cn
 
-junfan:
-  name: 张峻凡
-  title: Developer & Writer
-  url: https://pevoro.cn/junfan
-  image_url: https://pevoro.cn/img/junfan.jpg
-  page: true
-  socials:
-    x: junfan_dev
-    github: junfan
-    linkedin: junfan
-    newsletter: https://pevoro.cn/junfan

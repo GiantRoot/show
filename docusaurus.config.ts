@@ -125,9 +125,12 @@ const config: Config = {
         },
         {
             to: '/blog', 
-            label: '📝我的博客', 
-            position: 'left', 
-            activeBaseRegex: '^/blog' },
+            label: '📝博客文章', 
+            position: 'left'},
+        {
+            to: '/authors/junfan', 
+            label: '🧑🏻‍🔬团队成员', 
+            position: 'left'},
         {
           href: '/contacts',
           label: '联系我',
