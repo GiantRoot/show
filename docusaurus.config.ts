@@ -133,7 +133,7 @@ const config: Config = {
             position: 'left'},
         {
           href: '/contacts',
-          label: '联系我',
+          label: '📧联系我',
           position: 'right',
         },
       ],

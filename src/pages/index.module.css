@@ -4,7 +4,14 @@
  */
 
 .heroBanner {
+  width: 100vw;
+  height: auto;
+  background-image: url('/img/sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 2rem 0;
+  color:black;
   text-align: center;
   position: relative;
   overflow: hidden;
