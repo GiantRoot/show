@@ -104,5 +104,5 @@ sudo systemctl reload caddy
 
 ```bash
 npm run build
-rsync -av --delete ./build/ deploy@your.server.ip:/var/www/site/
+rsync -av --delete ./build/ deploy@pevoro.cn:/var/www/site/
 ```
