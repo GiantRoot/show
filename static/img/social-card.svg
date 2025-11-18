@@ -19,6 +19,12 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1">
+    <rect
+       x="-210.22724"
+       y="-113.19928"
+       width="1777.6019"
+       height="1099.6502"
+       id="rect3" />
     <linearGradient
        id="linearGradient22"
        inkscape:collect="always">
@@ -1006,7 +1012,7 @@
        x2="1082.3737"
        y2="46.523358"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.6683757,0,0,1.6683757,-632.83336,68.018231)" />
+       gradientTransform="matrix(0.9550991,0,0,0.9550991,96.618353,228.44466)" />
     <pattern
        inkscape:collect="always"
        xlink:href="#Strips1_3"
@@ -1068,7 +1074,7 @@
        xlink:href="#linearGradient22"
        id="linearGradient21"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.6683757,0,0,1.6683757,-200.23313,277.17565)"
+       gradientTransform="matrix(1.4387728,0,0,1.4387728,-83.62982,307.50109)"
        x1="400.12994"
        y1="137.20554"
        x2="815.59937"
@@ -1083,9 +1089,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.5684375"
-     inkscape:cx="583.17757"
-     inkscape:cy="379.1094"
+     inkscape:zoom="0.80389202"
+     inkscape:cx="573.4601"
+     inkscape:cy="549.20311"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -1096,7 +1102,7 @@
   <g
      id="g18"
      clip-path="none"
-     transform="translate(17.592079,-14.073667)">
+     transform="translate(64.862109,-133.49269)">
     <rect
        style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#1c71d8;stroke-width:3.96003;stroke-dasharray:none;stroke-opacity:1"
        id="rect19"
@@ -1189,30 +1195,30 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-weight:100;font-size:96px;font-family:MiSans;-inkscape-font-specification:'MiSans, Thin';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient21);stroke:none;stroke-width:3.33675;stroke-linecap:round;stroke-linejoin:round"
-     x="461.61398"
-     y="472.35455"
+     style="font-weight:100;font-size:82.7884px;font-family:MiSans;-inkscape-font-specification:'MiSans, Thin';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient21);stroke:none;stroke-width:2.87754;stroke-linecap:round;stroke-linejoin:round"
+     x="487.13345"
+     y="475.81931"
      id="text1-1"
      inkscape:label="share"><tspan
-       id="tspan1-5"
-       x="461.61398"
-       y="472.35455"
+       x="487.13345"
+       y="475.81931"
        sodipodi:role="line"
-       style="font-style:normal;font-variant:normal;font-weight:630;font-stretch:normal;font-size:96px;font-family:MiSans;-inkscape-font-specification:'MiSans weight=630';fill:url(#linearGradient21);fill-opacity:1;stroke:none;stroke-width:3.33675">Just</tspan><tspan
-       x="461.61398"
-       y="592.35455"
-       sodipodi:role="line"
-       style="font-style:normal;font-variant:normal;font-weight:630;font-stretch:normal;font-size:96px;font-family:MiSans;-inkscape-font-specification:'MiSans weight=630';fill:url(#linearGradient21);fill-opacity:1;stroke:none;stroke-width:3.33675"
-       id="tspan22">Want to Share</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:630;font-stretch:normal;font-size:82.7884px;font-family:MiSans;-inkscape-font-specification:'MiSans weight=630';fill:url(#linearGradient21);fill-opacity:1;stroke:none;stroke-width:2.87754"
+       id="tspan2">Who will learn?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:100;font-size:320.329px;font-family:MiSans;-inkscape-font-specification:'MiSans, Thin';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient2);stroke:none;stroke-width:3.33675;stroke-linecap:round;stroke-linejoin:round"
-     x="29.013756"
-     y="263.19711"
-     id="text1"><tspan
+     style="font-weight:100;font-size:183.379px;font-family:MiSans;-inkscape-font-specification:'MiSans, Thin';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient2);stroke:none;stroke-width:1.91019;stroke-linecap:round;stroke-linejoin:round"
+     x="475.5076"
+     y="340.1792"
+     id="text1"
+     transform="scale(1.006231,0.99380759)"><tspan
        id="tspan1"
-       x="29.013756"
-       y="263.19711"
+       x="475.5076"
+       y="340.1792"
        sodipodi:role="line"
-       style="font-style:normal;font-variant:normal;font-weight:630;font-stretch:normal;font-size:320.329px;font-family:MiSans;-inkscape-font-specification:'MiSans weight=630';fill:url(#linearGradient2);fill-opacity:1;stroke-width:3.33675;stroke:none">Pevoro</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:630;font-stretch:normal;font-size:183.379px;font-family:MiSans;-inkscape-font-specification:'MiSans weight=630';fill:url(#linearGradient2);fill-opacity:1;stroke:none;stroke-width:1.91019">Pevoro</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text3"
+     style="fill:#ff8a4b;text-orientation:auto;font-size:26.66666667px;-inkscape-font-specification:'MiSans,  weight=630';font-family:MiSans;stroke-width:0.038;stroke-linecap:round;stroke-linejoin:round;font-weight:630;paint-order:fill markers stroke;stroke:#000000;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3)" />
 </svg>
