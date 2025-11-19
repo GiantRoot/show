@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # 实验科学
 
+## 粉末冶金
+
+[粉末冶金](./powder_metallurgy/intro.md)
+
 ## 金属粉末
 
 
