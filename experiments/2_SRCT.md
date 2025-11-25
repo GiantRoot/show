@@ -28,6 +28,8 @@ sidebar_position: 3
 
 线站使用玻璃毛细管品牌为Sutter。建议使用玻璃毛细管规格为：150-110-7.5（前缀BF，B，后缀HP均可），如果没有，150-110-10可也，但可能因为长度多了2.5cm，填充样品稍有困难。Sutter公司网址为https://sutter.com。
 
+[Sutter Instrument offers only TYPE I-CLASS A borosilicate as described by ASTM Standard 3.1.2. This glass softens at 821 degrees Celsius](https://www.sutter.com/micropipette/glass#capillary)
+
 ## BL13-微米CT
 
 显微CT样品要求：z方向无要求，长宽比尽量小，最好为圆柱样品
