@@ -128,7 +128,7 @@ const config: Config = {
             label: '📝博客文章', 
             position: 'left'},
         {
-            to: '/authors/junfan', 
+            to: '/authors', 
             label: '🧑🏻‍🔬团队成员', 
             position: 'left'},
         {
