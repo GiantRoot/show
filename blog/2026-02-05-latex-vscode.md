@@ -3,7 +3,7 @@ slug: latex_in_vscode
 title: 使用latex和vscode写论文
 authors: [pevoro]
 date: 2026-02-05
-tags: [开源软件, 论文写作]
+tags: [开源软件]
 ---
 
 之前，写代码对于普通人来说是难事，但是现在人工智能加持之下，代码变得越来越容易应对。

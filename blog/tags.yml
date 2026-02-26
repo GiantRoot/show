@@ -17,3 +17,13 @@ share:
   label: 抱怨
   permalink: /complain
   description: 发泄不满，抱怨生活。
+
+小说:
+  label: 小说
+  permalink: /novel
+  description: 胡编乱造的故事
+
+开源软件:
+  label: 开源软件
+  permalink: /oss
+  description: 开源工具分享

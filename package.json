@@ -28,6 +28,7 @@
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
+    "baseline-browser-mapping": "^2.10.0",
     "katex": "^0.16.22",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
