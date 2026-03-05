@@ -36,7 +36,7 @@ https://mirrors.aliyun.com/CTAN/systems/texlive/Images/ # 阿里云
 
 ## 编写vscode setting文件
 
-创建文件夹`.vscode`，创建文件`setting.json`，写入下面内容：
+创建文件夹`.vscode`，创建文件`settings.json`，写入下面内容，注意，将其中的`C:/texlive/2025/bin/windows/`改为你自己的安装目录：
 
 ``` json
 {
