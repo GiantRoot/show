@@ -39,10 +39,10 @@ sudo rsync -av --delete build/ /var/www/site/
 5. **写 Caddyfile**（/etc/caddy/Caddyfile）
 
 ```
-sodu vim /etc/caddy/Caddyfile
+sudo vim /etc/caddy/Caddyfile
 ```
 
-```
+``` bash
 # www -> 根域名
 www.pevoro.cn {
   redir https://pevoro.cn{uri} permanent
@@ -105,4 +105,87 @@ sudo systemctl reload caddy
 ```bash
 npm run build
 rsync -av --delete ./build/ deploy@pevoro.cn:/var/www/site/
+```
+
+## 部署openWebUI
+
+### 安装软件
+
+``` bash
+# 使用deploy 用户
+
+mkdir gptac
+cd gptac
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# 安装（全程按回车 + 输入 yes 即可）
+bash Miniconda3-latest-Linux-x86_64.sh
+
+# 让终端生效
+source ~/.bashrc
+
+# 测试是否安装成功（显示版本即成功）
+conda --version
+
+conda create -n gptac python=3.11 -y
+conda activate gptac
+git clone --depth=1 https://github.com/binary-husky/gpt_academic.git
+cd gpt_academic
+
+pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+
+cp config.py config_private.py
+vim config_private.py
+# 修改apikey、模型和WEB_PORT
+
+# 运行open-webui
+nohup python main.py > log 2>&1 &
+```
+
+### 配置域名
+
+在域名解析中，添加chat和www到服务器IP
+
+更改caddy文件
+
+``` bash
+# www -> 根域名
+www.pevoro.cn {
+  redir https://pevoro.cn{uri} permanent
+}
+
+# 聊天窗口
+chat.pevoro.cn {
+    reverse_proxy 127.0.0.1:8080   # 本地第一个服务端口
+}
+
+pevoro.cn {
+  # 指向 Docusaurus 构建结果
+  root * /var/www/site
+  file_server
+
+  # 压缩（HTTP/2/3 自带） 
+  encode zstd gzip
+
+  # 指纹静态资源：长缓存
+  @static path_regexp static \.(css|js|mjs|png|jpg|jpeg|gif|svg|ico|woff2)$
+  header @static Cache-Control "public, max-age=31536000, immutable"
+
+  # HTML 不缓存，便于更新即时生效
+  @html path *.html
+  header @html Cache-Control "no-store"
+
+  # SPA 回退（Docusaurus 必备）
+  try_files {path} {path}/ /index.html
+
+  # 基础安全头（保守，不会影响内嵌）
+  header {
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy "strict-origin-when-cross-origin"
+  }
+}
+```
+
+```bash
+sudo systemctl reload caddy
 ```
