@@ -1,0 +1,88 @@
+.game {
+  --tile-size: clamp(36px, 8vw, 56px);
+  --tile-gap: 6px;
+
+  max-width: 620px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 12%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.restart {
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  color: white;
+  background: var(--ifm-color-primary);
+}
+
+.message {
+  margin: 0 0 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, var(--tile-size));
+  grid-template-rows: repeat(8, var(--tile-size));
+  gap: var(--tile-gap);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  appearance: none;
+
+  border-radius: 12px;
+  font-size: calc(var(--tile-size) * 0.48);
+  line-height: 1;
+  cursor: pointer;
+
+  background: var(--ifm-background-surface-color);
+  box-shadow: inset 0 -3px 0 rgb(0 0 0 / 12%), 0 2px 8px rgb(0 0 0 / 10%);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+}
+
+.selected {
+  outline: 3px solid var(--ifm-color-primary);
+  transform: scale(1.06);
+}
+
+@media (max-width: 480px) {
+  .game {
+    --tile-size: clamp(32px, 10vw, 44px);
+    --tile-gap: 4px;
+    padding: 1rem;
+  }
+
+  .tile {
+    border-radius: 9px;
+  }
+}

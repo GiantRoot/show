@@ -1,0 +1,17 @@
+---
+slug: xiaoxiaole
+title: 消消乐小游戏
+authors: [pevoro]
+tags: [share]
+---
+
+学术消消乐，打怪升级。
+
+{/* truncate */}
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import Match3Game from '@site/src/components/Match3Game';
+
+<BrowserOnly fallback={<div>游戏加载中...</div>}>
+  {() => <Match3Game />}
+</BrowserOnly>
