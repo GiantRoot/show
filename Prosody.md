@@ -53,8 +53,8 @@ https://share.pevoro.cn        -> Caddy -> 127.0.0.1:5280
 | A | @ | 121.199.73.156 |
 | A | xmpp | 121.199.73.156 |
 | A | share | 121.199.73.156 |
-| SRV | _xmpp-client._tcp | 5 0 5222 xmpp.pevoro.cn. |
-| SRV | _xmpp-server._tcp | 5 0 5269 xmpp.pevoro.cn. |
+| SRV | _xmpp-client._tcp | 5 0 5222 xmpp.pevoro.cn |
+| SRV | _xmpp-server._tcp | 5 0 5269 xmpp.pevoro.cn |
 
 说明：
 
